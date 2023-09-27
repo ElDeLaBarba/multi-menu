@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Multi_Menu"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="Play&#xD;&#xA;" Height="80" Margin="539,344,30,0" VerticalAlignment="Top" Click="Button_Click" Initialized="PlayButton_Initialized"/>
+        <Button Content="Cancel&#xA;" Height="80" Margin="30,344,539,0" VerticalAlignment="Top" Click="Button_Click" Initialized="CancelButton_Initialized"/>
+        <ListBox HorizontalAlignment="Center" Height="221" Margin="0,95,0,0" VerticalAlignment="Top" Width="740" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged" Initialized="ListBox_Initialized"/>
+        <Image Margin="252,10,252,347" Source="/Multi-Menu logo.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

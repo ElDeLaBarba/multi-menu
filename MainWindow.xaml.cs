@@ -20,9 +20,38 @@ namespace Multi_Menu
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Button playButton;
+        public Button cancelButton;
+        public ListBox versionSelector;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void PlayButton_Initialized(object sender, EventArgs e)
+        {
+            playButton = (Button)sender;
+        }
+
+        private void CancelButton_Initialized(object sender, EventArgs e)
+        {
+            cancelButton = (Button)sender;
+        }
+
+        private void ListBox_Initialized(object sender, EventArgs e)
+        {
+            versionSelector = (ListBox)sender;
         }
     }
 }
